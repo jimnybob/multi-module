@@ -10,3 +10,6 @@
 [submodule "smartii-home-alexa"]
 	path = smartii-home-alexa
 	url = git@github.com:jimnybob/smartii-home-alexa.git
+[submodule "smartii-skill-alexa"]
+	path = smartii-skill-alexa
+	url = git@github.com:jimnybob/smartii-skill-alexa.git
