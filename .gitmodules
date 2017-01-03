@@ -1,0 +1,6 @@
+[submodule "alexa-smarthome-model"]
+	path = alexa-smarthome-model
+	url = git@github.com:jimnybob/alexa-smarthome-model.git
+[submodule "smartii-ir"]
+	path = smartii-ir
+	url = git@github.com:jimnybob/smartii-ir.git
