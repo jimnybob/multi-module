@@ -4,3 +4,9 @@
 [submodule "smartii-ir"]
 	path = smartii-ir
 	url = git@github.com:jimnybob/smartii-ir.git
+[submodule "lightwave-akka"]
+	path = lightwave-akka
+	url = git@github.com:jimnybob/lightwave-akka.git
+[submodule "smartii-home-alexa"]
+	path = smartii-home-alexa
+	url = git@github.com:jimnybob/smartii-home-alexa.git
