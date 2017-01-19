@@ -35,14 +35,17 @@ object MultiBuild extends Build
 
   lazy val commonSettings = Seq(
     version := "100.0.0-SNAPSHOT",
-    resolvers += "Scalaz Bintray Repo" at "http://dl.bintray.com/scalaz/releases"
+    resolvers += "Scalaz Bintray Repo" at "http://dl.bintray.com/scalaz/releases",
+    resolvers += "Smartii snapshots" at "http://repo.smartii.co.uk:8081/nexus/content/repositories/snapshots",
+    resolvers += "Smartii releases" at "http://repo.smartii.co.uk:8081/nexus/content/repositories/releases"
   ) ++ targetDirs
 
 
   lazy val multi = (project in file(".")).aggregate(
     alexaSmarthomeModel,
     smartiiHomeAlexa,
-    smartiiIr
+    smartiiIr,
+    lightwaveAkka
   ).settings(aggregate in update := false).settings(commonSettings)
 
 
@@ -52,4 +55,5 @@ object MultiBuild extends Build
 
   lazy val smartiiIr = project in file("smartii-ir") settings commonSettings
 
+  lazy val lightwaveAkka = project in file("lightwave-akka") settings commonSettings
 }
